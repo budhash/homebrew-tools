@@ -5,13 +5,13 @@ Homebrew tap for [budhash](https://github.com/budhash)'s command-line tools.
 ## Usage
 
 ```bash
-# one-off install (no tap step needed)
-brew install budhash/tools/<formula>
-
-# or tap once, then install by short name
 brew tap budhash/tools
 brew install <formula>
 ```
+
+Homebrew no longer auto-taps third-party taps, so the tap step is required —
+`brew install budhash/tools/<formula>` on an untapped machine fails with
+"This command requires the tap budhash/tools".
 
 ## Formulae
 
